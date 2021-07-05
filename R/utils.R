@@ -40,7 +40,7 @@ fingertips_ensure_api_available <- function(endpoint = fingertips_endpoint()) {
                                                     use_proxy(ie_get_proxy_for_url(endpoint),
                                                               username = "",
                                                               password = "",
-                                                              auth = "ntlm")))
+                                                              auth = "any")))
         }, silent = TRUE)
 
         if (code == 200) return(TRUE)
